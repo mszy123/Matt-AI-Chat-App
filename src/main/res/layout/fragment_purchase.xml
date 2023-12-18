@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PurchaseFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/subscription_layout"
+            android:layout_height="wrap_content"
+            android:paddingTop="48dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="-12dp"
+            android:paddingBottom="48dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/purchase_item_background"
+                android:paddingTop="20dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="36dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="Weekly Subscription"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Unlimited credits/week"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Access to all models (including GPT-4)"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="$4.99/week"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:background="@drawable/pill_shape"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@drawable/circle"
+                android:layout_marginTop="-28dp"
+                android:layout_marginBottom="-24dp"
+                android:text="Best \nValue"
+                android:layout_marginLeft="140dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/gold"
+                android:textSize="14sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="-24dp"
+                android:text="Purchase"
+                android:id="@+id/purchase_subscription_button"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                style="@style/Widget.Material3.Button"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue"
+                android:textSize="18sp" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/credit_purchase_layout"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subscription_layout"
+            android:layout_marginTop="32dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="-12dp"
+            android:paddingBottom="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/purchase_item_background"
+                android:paddingTop="20dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="36dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="50 GPT-3 Credits"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="50 credits to use with the GPT-3 model"
+                    android:textSize="18sp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="$0.99"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:background="@drawable/pill_shape"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"/>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="-24dp"
+                android:text="Purchase"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                style="@style/Widget.Material3.Button"
+                android:id="@+id/purchase_credits_button"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue"
+                android:textSize="18sp" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All purchases secured through Google Play Store"
+            android:textColor="@color/gray"
+            android:layout_below="@id/credit_purchase_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:id="@+id/secure_purchase_text_view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel anytime"
+            android:textColor="@color/gray"
+            android:layout_below="@id/secure_purchase_text_view"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:id="@+id/cancel_anytime_textview"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

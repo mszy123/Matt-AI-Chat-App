@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/ai_chat_background"
+
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/response_linear_layout">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/sparkle"
+            android:id="@+id/ai_sparkle_image_view"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Error"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/ai_sparkle_image_view"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="12dp"
+            android:id="@+id/ai_response"
+            />
+
+        </LinearLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/response_linear_layout"
+            android:id="@+id/chip_group"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="12dp">
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textColor="@color/gray"
+                app:chipBackgroundColor="@color/light_gray"
+                android:id="@+id/copy_chip"
+                app:chipIconSize="17dp"
+                android:clickable="true"
+                app:iconStartPadding="8dp"
+                app:chipIcon="@drawable/baseline_content_copy_24"/>
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@color/gray"
+                app:chipBackgroundColor="@color/light_gray"
+                android:id="@+id/share_chip"
+                android:clickable="true"
+                app:chipIconSize="17dp"
+                app:iconStartPadding="6dp"
+                app:chipIcon="@drawable/baseline_share_24"/>
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </RelativeLayout>
+
+</RelativeLayout>

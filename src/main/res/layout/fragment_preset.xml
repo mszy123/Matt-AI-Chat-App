@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PresetFragment"
+    android:background="@drawable/main_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="22sp"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textStyle="bold"
+            android:textSize="36sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/write_essay_cardview"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Write an essay"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Use AI to write your essay given a prompt."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/essay_grade_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Grade your essay"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Use AI to grade your essay given a prompt and rubric."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/concept_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Explain a concept"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:text="Explain a concept in simple terms" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="22sp"
+            android:layout_height="wrap_content"
+            android:text="Creative"
+
+            android:textStyle="bold"
+            android:textSize="36sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/song_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Make a song"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Generate a song about the topic of your choice"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/poem_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Make a poem"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Generate a poem about the topic of your choice"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/story_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Make a story"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Write a story about the topic of your choice"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/movie_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Make a movie"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Write a movie script about the topic of your choice"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="22sp"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:textStyle="bold"
+            android:textSize="36sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/name_generate_cardview"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Name generator"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Generate a name for your business."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/slogan_generate_cardview"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Slogan maker"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Make a slogan for your business."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/email_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="16dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Email generator"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Write an email on a given topic."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="22sp"
+            android:layout_height="wrap_content"
+            android:text="Fun"
+            android:textStyle="bold"
+            android:textSize="36sp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/joke_generate_cardview"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Tell a joke"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Generate a funny joke."/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/movie_emoji_cardview"
+                    android:layout_margin="12dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Turn movie to emoji"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Turn your favorite movie title into emojis"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="24dp"
+                    android:clickable="true"
+                    android:id="@+id/caption_generate_cardview"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:layout_margin="16dp"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:text="Social media caption"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_height="wrap_content"
+                            android:text="Get a caption"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+</FrameLayout>

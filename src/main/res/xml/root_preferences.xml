@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Purchases">
+
+        <Preference
+            app:key="purchase_settings"
+            app:title="Purchase"
+            app:summary="Purchase subscription or credits"
+             />
+
+        <Preference
+            app:key="restore_purchase_settings"
+            app:title="Restore Purchase"
+            app:summary="Click to restore previous purchases"
+
+             />
+
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Other">
+
+        <Preference
+            app:key="privacy_policy"
+            app:title="Privacy Policy" />
+
+        <Preference
+            app:key="terms_of_service"
+            app:title="Terms of Service" />
+
+        <Preference
+            app:key="rating"
+            app:title="Rate us"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

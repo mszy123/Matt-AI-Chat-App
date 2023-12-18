@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:id="@+id/top_layout"
+        >
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@id/credit_layout"
+            android:background="@drawable/circle"
+            android:id="@+id/reset_layout"
+            android:backgroundTint="@color/light_gray"
+            android:layout_marginEnd="10dp"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reset_btn"
+                android:contextClickable="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/light_gray"
+                android:focusable="true" />
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/restart"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:layout_toLeftOf="@id/credit_layout"
+            android:background="@drawable/circle"
+            android:id="@+id/trash_layout"
+            android:backgroundTint="@color/light_gray"
+            android:layout_marginEnd="10dp"
+            >
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/trash_btn"
+                android:contextClickable="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/light_gray"
+                android:focusable="true" />
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_delete_forever_24"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_text_view"
+            android:text="AI Chat"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:id="@+id/credit_layout"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pill_shape"
+            android:paddingStart="10dp"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/sparkle_img"
+                android:src="@drawable/sparkle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/credits_textview"
+                android:paddingStart="4dp"
+                android:paddingEnd="8dp"
+                android:textSize="18sp"
+                android:text="10"
+                android:layout_gravity="center_vertical"/>
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="20dp"
+                    android:src="@drawable/baseline_add_24"
+                    />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_nav_layout"
+        android:layout_below="@id/top_layout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav_layout"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:menu="@menu/bottom_navigation_menu"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
