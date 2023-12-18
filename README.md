@@ -1,4 +1,4 @@
-# Matt-AI-Chat-App
+# AI Chat App (MattChat)
 Android App to interface with OpenAI GPT models
 
 ## Table of Contents
