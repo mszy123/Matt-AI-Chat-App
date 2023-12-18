@@ -13,10 +13,12 @@ Android App to interface with OpenAI GPT models
 - Fun and useful preset prompts
 
 ## Screenshots
-![Presets](screenshots_ai/Screenshot_20231012-210742.png)
-![Past Conversations](screenshots_ai/Screenshot_20231012-210932.png)
-![Main Page](screenshots_ai/Screenshot_20231012-211126.png)
-<!-- Add more screenshots or GIFs showcasing different app features -->
+<div style="display: flex; justify-content: space-around;">
+    <img src="screenshots_ai/Screenshot_20231012-210742.png" alt="Presets" width="200">
+    <img src="screenshots_ai/Screenshot_20231012-210932.png" alt="Past Conversations" width="200">
+    <img src="screenshots_ai/Screenshot_20231012-211126.png" alt="Main Page" width="200">
+</div>
+
 
 ## Technologies Used
 - Android SDK
