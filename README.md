@@ -1,5 +1,6 @@
 # AI Chat App (MattChat)
 Android App to interface with OpenAI GPT models
+Unreleased due to cost of running AI model...
 
 ## Table of Contents
 - [Features](#features)
